@@ -1,0 +1,23 @@
+{"title": "consolidata schema",
+  "schema" : {
+    "type": "object",
+    "properties": {
+      "input_string": {
+        "type": "string",
+        "minLength": 3,
+        "description": "Please enter your input_string",
+        "maxLength":5
+      },
+      "input_number": {
+        "type": "number",
+        "maximum":100
+      },
+      "Input_Date": {
+        "type": "string",
+        "format": "date"
+      }
+    }
+      
+  }
+
+}

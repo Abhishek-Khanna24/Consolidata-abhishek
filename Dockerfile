@@ -1,0 +1,14 @@
+FROM node:10
+
+WORKDIR /
+
+COPY ./ /
+RUN npm i
+
+
+
+EXPOSE 5000
+EXPOSE 3000
+EXPOSE $PORT
+
+CMD ["npm start"]
