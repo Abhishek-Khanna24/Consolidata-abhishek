@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Formik, Form, Field, ErrorMessage,useField, } from 'formik';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import {  useFirestoreDocData } from 'reactfire';
@@ -49,8 +48,7 @@ let JsonForm =  ( props) => {
     const [displayDataAsString, setDisplayDataAsString] = useState('');
     const [jsonformsData, setJsonformsData] = useState();
     const dynamic_formcollections = db.collection('dynamic_forms').doc(props.type);
-    const formnRef= dynamic_formcollections;
-        const { status, data } =  useFirestoreDocData(formnRef);
+    const { status, data } =  useFirestoreDocData(dynamic_formcollections);
         if (status === 'loading') {console.log('its loading')}
 
 
