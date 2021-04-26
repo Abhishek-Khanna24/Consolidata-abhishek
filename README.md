@@ -1,17 +1,17 @@
 #  docker image for the project
 run the following commands:
-    docker build -t consolidata:1 .
-    docker run -d -it -p 3000:3000  consolidata:3
+docker build -t consolidata:1 .
+docker run -d -it -p 3000:3000  consolidata:3
 
 open localhost:3000 for react frontend
 
-# this project is also hosted on heroku : https://sleepy-retreat-27717.herokuapp.com/
+ this project is also hosted on heroku : https://sleepy-retreat-27717.herokuapp.com/
 
-# used jsonforms for custom build  and firebase for backend
+ used jsonforms for custom build  and firebase for backend
 
-# for now I have passed the formSchema in the prop, but later we can add that from react and then render accrodingly
+ for now I have passed the formSchema in the prop, but later we can add that from react and then render accrodingly
 
-# data is saved to same document under new collection data (Check Firebase for clarification) given access to Austin via email 
+ data is saved to same document under new collection data (Check Firebase for clarification) given access to Austin via email 
 
 for creating new form schema json file should be created : 
 schema will be the schema for the form:
